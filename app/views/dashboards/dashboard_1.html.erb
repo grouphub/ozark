@@ -1,5 +1,8 @@
+
+<!--TOP ROW DASHBOARD WIDGET -- CONTAINS A WELCOME NOTICE, OUTSTANDING TASK LIST, BUSINESS ANALYTICAL GRAPH, AND OPEN ENROLLMENT STATUS BREAKDOWN CHARTS  -->
 <div class="row  border-bottom white-bg dashboard-header">
     <div class="col-sm-3">
+        <!--TOP ROW DASHBOARD WIDGET -- WELCOME NOTICE -->
         <h2>Welcome Amelia</h2>
         <small>You have 42 messages and 6 notifications.</small>
         <ul class="list-group clear-list m-t">
@@ -7,6 +10,7 @@
                 <span class="pull-right">
                     09:00 pm
                 </span>
+            <!--TOP ROW DASHBOARD WIDGET -- OUTSTANDING TASK LIST -->
                 <span class="label label-success">1</span> Please contact me
             </li>
             <li class="list-group-item">
@@ -19,7 +23,7 @@
                 <span class="pull-right">
                     08:22 pm
                 </span>
-                <span class="label label-primary">3</span> Open new shop
+                <span class="label label-primary">3</span> Neew open enrollment
             </li>
             <li class="list-group-item">
                 <span class="pull-right">
@@ -31,10 +35,11 @@
                 <span class="pull-right">
                     12:00 am
                 </span>
-                <span class="label label-primary">5</span> Write a letter to Sandra
+                <span class="label label-primary">5</span> Write a letter to Samantha
             </li>
         </ul>
     </div>
+    <!--TOP ROW DASHBOARD WIDGET -- SALES GRAPHS -->
     <div class="col-sm-6">
         <div class="flot-chart dashboard-chart">
             <div class="flot-chart-content" id="flot-dashboard-chart"></div>
@@ -57,26 +62,27 @@
 
         </div>
     </div>
+    <!--TOP ROW DASHBOARD WIDGET -- OPEN ENROLLMENT GRAPHS -->
     <div class="col-sm-3">
         <div class="statistic-box">
             <h4>
-                Project Beta progress
+                Open Enrollment Progress
             </h4>
             <p>
-                You have two project with not compleated task.
+                You have two groups with incomplete enrollment tasks.
             </p>
             <div class="row text-center">
                 <div class="col-lg-6">
                     <canvas id="polarChart" width="80" height="80"></canvas>
-                    <h5>Kolter</h5>
+                    <h5>Kolter Co.</h5>
                 </div>
                 <div class="col-lg-6">
                     <canvas id="doughnutChart" width="78" height="78"></canvas>
-                    <h5>Maxtor</h5>
+                    <h5>Maxtor Mart</h5>
                 </div>
             </div>
             <div class="m-t">
-                <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                <small>Breakdown of the state of open enrollment for outstanding groups.</small>
             </div>
 
         </div>
@@ -121,9 +127,11 @@
                         <small class="font-bold">$ 20 054.43</small>
                     </div>
                     <h4>
-                        NYS report new data!
+                        New employer group is ready to be enrolled.
                         <br />
                         <small class="m-r"><a href="<%= url_for :controller => 'graphs', :action => 'flot' %>"> Check the stock price! </a> </small>
+                
+                
                 </h4>
             </div>
         </div>
